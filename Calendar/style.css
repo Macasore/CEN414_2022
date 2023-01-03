@@ -100,3 +100,32 @@ header .current-date {
 .days li:not(.active):hover::before {
     background: #f2f2f2;
 }
+.days li.myBirth::before{
+    background-color: gold;
+    border-radius: 70%;
+}
+.days li.dadBirth::before {
+    background-color: skyblue;
+    border-radius: 70%;
+}
+.days li.momBirth::before {
+    background-color: lightgreen;
+    border-radius: 70%;
+}
+.days li.sib1Birth::before {
+    background-color: yellow;
+    border-radius: 70%;
+}
+.days li.sib2Birth::before {
+    background-color: pink;
+    border-radius: 70%;
+}
+.days li.sib3Birth::before {
+    background-color: orange;
+    border-radius: 70%;
+}
+.days li.holiday::before {
+    background-color: brown;
+    border-radius: 70%;
+}
+
