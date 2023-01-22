@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Prime Number</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+       function checkIfPrime(n){
+        for (let i = 2; i <= n/2 ; i++){
+            if (n % i == 0){
+                return 0;
+            }
+        }
+        return n;
+       }
+       function getSampleNumber(){
+        const primeNums = [];
+        const num = prompt('Enter the value of n: ')
+        for (let j = 1; j<=num; j++){
+            const check = checkIfPrime(j)
+
+            if (check) primeNums.push(check);
+            if(primeNums.includes(1) == true){
+                 const ind = primeNums.indexOf(1);
+                 primeNums.splice(ind,1)
+            }
+        }
+            return primeNums;
+       }
+       console.log(getSampleNumber());
+    </script>
+</body>
+    
+</html>
