@@ -1,0 +1,103 @@
+body {
+    background: rgb(117, 112, 112);
+    font-family: "Times New Roman", Times, serif;
+}
+
+.page-heading {
+    text-align: center;
+    background: rgb(237, 230, 230);
+    padding: 20px 20px;
+}
+
+#cart {
+    margin-top: 2rem;
+    display: block;
+}
+.cart-heading {
+    display: flex;
+    background: #d29990;
+    color: #fff;
+    padding: 15px 15px;
+}
+.cart-body {
+    text-align: center;
+}
+.cart-summary-container {
+    width: 27rem;
+    border-top: 1px solid hsla(0, 0%, 59%, 0.16);
+}
+.cart-total-amount {
+    font-weight: 700;
+    padding: 2rem;
+    font-size: 1.3rem;
+    display: flex;
+    border-top: 1px solid hsla(0, 0%, 59%, 0.16);
+    border-bottom: 1px solid hsla(0, 0%, 59%, 0.16);
+}
+.cart-checkout {
+    cursor: pointer;
+    height: 6rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantityContainer {
+    display: flex;
+    align-items: center;
+}
+.quantity {
+    width: 5rem;
+    height: 2rem;
+    margin: 0 0.5rem;
+    text-align: center;
+    padding: 0;
+    font-weight: bold;
+}
+.quantity-am {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.name {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.cart-each-product {
+    display: flex;
+    color: #2d2d2d;
+    justify-content: space-between;
+    margin: 1rem 0 0 0;
+}
+
+.menu-item-container {
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
+    position: relative;
+    margin: 1rem;
+}
+.item-name {
+    font-size: 1.4rem;
+    color: #6b412f;
+    letter-spacing: 0.42px;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+    padding-right: 1.7rem;
+}
+.product-price {
+    margin-top: 0.5rem;
+    align-items: center;
+}
+
+.product-description {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin-right: 3px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    padding: 0px 5px;
+}

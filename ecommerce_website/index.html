@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maca's Apple store</title>
+        <link href="style.css" rel="stylesheet" />
+        <script
+            type="text/javascript"
+            src="../../../Downloads/Telegram Desktop/jquery.min.js"
+        ></script>
+        <script type="text/javascript" src="jquery.js"></script>
+    </head>
+    <body>
+        <style>
+            footer {
+                background-color: rgb(218, 218, 203);
+                padding: 20px;
+            }
+
+            img {
+                max-width: 85%;
+                height: auto;
+            }
+            .menu {
+                display: flex;
+                padding: 20px;
+            }
+        </style>
+        <div>
+            <header>
+                <h1 class="page-heading">Maca's Apple store</h1>
+            </header>
+        </div>
+
+        <div class="menu">
+            <div class="product-description">
+                <img src="images\apple_macbook.png" />
+                <div class="item-name">Apple mac-book</div>
+                <p class="product-price">&#8358; 750000</p>
+                <div class="add-button">
+                    <button
+                        class="btn btn-primary sc-add-to-cart"
+                        data-name="Apple mac-book"
+                        data-price="750000"
+                        type="submit"
+                    >
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+            <div class="product-description">
+                <img
+                    src="images\Apple Watch Series 6 GPS + Cellular 40mm 44mm Gold,Silver,Gray Stainless Steel Case with Gold,Silver,Gray Milanese Loop Nike Version.png"
+                />
+                <h3>Apple watch series 6</h3>
+                <p class="product-price">&#8358; 95000</p>
+                <div class="add-button">
+                    <button
+                        class="btn btn-primary sc-add-to-cart"
+                        data-name="Apple watch series 6"
+                        data-price="95000"
+                        type="submit"
+                    >
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-description">
+                <img src="images\iPhone 6s - Technical Specifications.png" />
+                <h3>Iphone 6s</h3>
+                <p class="product-price">&#8358; 80000</p>
+                <div class="add-button">
+                    <button
+                        class="btn btn-primary sc-add-to-cart"
+                        data-name="Iphone 6s"
+                        data-price="80000"
+                        type="submit"
+                    >
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+
+            <!-- Cart Grid -->
+            <div class="col-md-3">
+                <div id="cart"></div>
+            </div>
+            <!-- //Cart Grid -->
+            <script>
+                $(document).ready(function () {
+                    $("#cart").simpleCart();
+                });
+            </script>
+        </div>
+        <div class="menu">
+            <div class="product-description">
+                <img src="images\Black Apple AirPods & AirPods Pros.jfif" />
+                <h3>Black Apple Airpods</h3>
+                <p class="product-price">&#8358; 75000</p>
+                <div class="add-button">
+                    <button
+                        class="btn btn-primary sc-add-to-cart"
+                        data-name="Black Apple Airpods"
+                        data-price="75000"
+                        type="submit"
+                    >
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-description">
+                <img src="images\iphone11.jfif" />
+                <h3>Iphone 11</h3>
+                <p class="product-price">&#8358; 450000</p>
+                <div class="add-button">
+                    <button
+                        class="btn btn-primary sc-add-to-cart"
+                        data-name="Iphone 11"
+                        data-price="450000"
+                        type="submit"
+                    >
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <footer id="site-info">
+            <form class="form-inline">
+                Get deals:
+                <input
+                    type="email"
+                    class="form-control"
+                    size="50"
+                    placeholder="Email Address"
+                />
+                <button type="button" class="btn btn-danger">Sign Up</button>
+            </form>
+            <p>Copyright &copy; Maca's Apple store</p>
+        </footer>
+    </body>
+</html>
