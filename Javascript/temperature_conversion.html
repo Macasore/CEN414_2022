@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Temperature Conversion</title>
+    </head>
+    <body>
+        <script>
+            function convertTemperatureScale(type, value) {
+                    switch (type) {
+                        case 1:
+                            fahToCel = (value - 32)/1.8;
+                            console.log(value, "F is", fahToCel, "C");
+                            break;
+                        case 2:
+                            celToFah = (value * 1.8) + 32;
+                            console.log(value, "C is", celToFah, "F");
+                            break;
+                        case 3:
+                            celToKel = 273 + value;
+                            console.log(value, "C is", celToKel, "K");
+                            break;
+                        case 4:
+                            kelToCel = value - 273;
+                            console.log(value, "K is", kelToCel, "C");
+                            break;
+                         case 5:
+                            fahToCel = (value - 32) / 1.8;
+                            celToKel = 273 + fahToCel;
+                            console.log(value, "F is", celToKel, "K");
+                             break;
+                         case 6:
+                             kelToCel = value - 273;
+                             celToFah = (kelToCel * 1.8) + 32;;
+                             console.log(value, "K is", celToFah, "F");
+                             break;
+                        default:
+                            break;
+                    }
+                }
+                convertTemperatureScale(1, 20);
+                convertTemperatureScale(2, 20);
+                convertTemperatureScale(3, 40);
+                convertTemperatureScale(4, 30);
+                convertTemperatureScale(5, 25);
+                convertTemperatureScale(6, 12);
+        </script>
+    </body>
+</html>
