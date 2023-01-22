@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Javascript Class one</title>
+</head>
+<body>
+<p id="fp" style = "color: black; background-color:#FFAD00;"> My name is Mac-Asore David </p>
+<button type = "button" onclick = "document.getElementById('fp').innerHTML='This has been changed to this'"> Click! </button>
+<script type="text/javascript">
+	console.log("Working");
+	var x =[0,1,2,3,4];
+	var sum = 0;
+	var len = x.length;
+	var avg = 0;
+	for(var i =0; i < len - 1; i++){
+		sum = sum + x[i];
+	}
+	avg = sum/len;
+	console.log(avg);
+</script>
+</body>
+</html>
